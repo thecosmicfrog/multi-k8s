@@ -17,4 +17,4 @@ spec:
         image: thecosmicfrog/multi-worker
         env:
           - name: REDIS_HOST
-            value: redis-clusterip-service
+            value: redis-cluster-ip-service
