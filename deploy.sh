@@ -11,7 +11,7 @@ docker push thecosmicfrog/multi-worker:$SHA
 
 kubectl apply -f k8s
 
-kubectl set image deployments/client-deployment server=thecosmicfrog/multi-client:$SHA
-kubectl set image deployments/server-deployment client=thecosmicfrog/multi-server:$SHA
+kubectl set image deployments/client-deployment client=thecosmicfrog/multi-client:$SHA
+kubectl set image deployments/server-deployment server=thecosmicfrog/multi-server:$SHA
 kubectl set image deployments/worker-deployment worker=thecosmicfrog/multi-worker:$SHA
 
