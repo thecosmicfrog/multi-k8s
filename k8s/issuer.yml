@@ -8,5 +8,9 @@ spec:
     email: "aaron@thecosmicfrog.org"
     privateKeySecretRef:
       name: letsencrypt-prod
-    http01: {}
+    solvers:
+      - selector: {}
+        http01:
+          ingress:
+            class: nginx
 
